@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FriendsModel.h"
+
 
 @interface TableViewController : UITableViewController
 
