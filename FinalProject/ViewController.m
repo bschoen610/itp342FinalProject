@@ -33,6 +33,9 @@
     marker.snippet = @"Australia";
     marker.map = mapView;
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //Need to change starting location to be my current location
+    //ask permission, save current location in some global variable i have access to in other view controllers
 }
 
 

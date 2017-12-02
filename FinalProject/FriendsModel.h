@@ -17,6 +17,7 @@
 @property (strong, nonatomic) NSString* filepath;
 
 
+
 // Creating the model
 + (instancetype) sharedModel;
 
@@ -27,11 +28,11 @@
 - (Friend *) friendAtIndex: (NSUInteger) index;
 
 // Inserting a friend
-/*
+
  - (void) insertWithFirstName: (NSString *) firstName
                      lastName: (NSString *) lastName
                    number: (NSString *) number;
- */
+ 
 
 
 // Removing a friend
