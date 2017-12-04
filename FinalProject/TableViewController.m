@@ -92,6 +92,7 @@ static NSString * const reuseIdentifier = @"reuse";
     [ self selectContactData];
 }
 -(void)selectContactData {
+    //This method is called when the add button is selected
     
     //alloc and init a contact picker view controller
     _picker = [[CNContactPickerViewController alloc] init];
@@ -124,6 +125,7 @@ static NSString * const reuseIdentifier = @"reuse";
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //This method is called when a cell in the table is selected
      Friend* friend1 = [self.model friendAtIndex:indexPath.row];
      NSLog(@"%@ %@ %@",friend1.firstName, friend1.lastName, friend1.number);
     
