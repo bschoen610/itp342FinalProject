@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Friend.h"
+#import <CoreLocation/CoreLocation.h>
+
 
 
 
@@ -15,6 +17,7 @@
 
 @property (nonatomic, readonly) unsigned currentIndex;
 @property (strong, nonatomic) NSString* filepath;
+@property NSString *myLocation;
 
 
 

@@ -131,7 +131,8 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     if([MFMessageComposeViewController canSendText])
     {
         //controller.body will be filled with information about my location
-        controller.body = @"SMS message here";
+        NSString *textBody = [NSString stringWithFormat:@"I am at %@", self.model.myLocation];
+        controller.body = textBody;
         //the only recipient is the selected contact
         controller.recipients = [NSArray arrayWithObjects:friend1.number, nil];
         controller.messageComposeDelegate = self;
