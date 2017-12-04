@@ -17,6 +17,9 @@
 		509EC6891FCCA74500F12320 /* FinalProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 509EC6881FCCA74500F12320 /* FinalProjectTests.m */; };
 		509EC6941FCCA74500F12320 /* FinalProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 509EC6931FCCA74500F12320 /* FinalProjectUITests.m */; };
 		509EC6A61FCDF07400F12320 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 509EC6A51FCDF07400F12320 /* TableViewController.m */; };
+		50FE9E991FCF30EF008F860B /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE9E981FCF30EF008F860B /* Friend.m */; };
+		50FE9E9C1FCF32D2008F860B /* FriendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE9E9B1FCF32D2008F860B /* FriendsModel.m */; };
+		50FE9E9F1FD35E26008F860B /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE9E9E1FD35E26008F860B /* ContactsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		509EC6951FCCA74500F12320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		509EC6A41FCDF07400F12320 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		509EC6A51FCDF07400F12320 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		50FE9E971FCF30EF008F860B /* Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		50FE9E981FCF30EF008F860B /* Friend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		50FE9E9A1FCF32D2008F860B /* FriendsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsModel.h; sourceTree = "<group>"; };
+		50FE9E9B1FCF32D2008F860B /* FriendsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsModel.m; sourceTree = "<group>"; };
+		50FE9E9D1FD35E26008F860B /* ContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		50FE9E9E1FD35E26008F860B /* ContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		795BE91978B1279F1AF9F706 /* Pods-FinalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF262478622A8B3767D823B /* Pods-FinalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalProject/Pods-FinalProject.release.xcconfig"; sourceTree = "<group>"; };
 		FF0277F1BF240E22BF0EAC83 /* libPods-FinalProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FinalProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +148,12 @@
 				509EC67E1FCCA74500F12320 /* main.m */,
 				509EC6A41FCDF07400F12320 /* TableViewController.h */,
 				509EC6A51FCDF07400F12320 /* TableViewController.m */,
+				50FE9E971FCF30EF008F860B /* Friend.h */,
+				50FE9E981FCF30EF008F860B /* Friend.m */,
+				50FE9E9A1FCF32D2008F860B /* FriendsModel.h */,
+				50FE9E9B1FCF32D2008F860B /* FriendsModel.m */,
+				50FE9E9D1FD35E26008F860B /* ContactsViewController.h */,
+				50FE9E9E1FD35E26008F860B /* ContactsViewController.m */,
 			);
 			path = FinalProject;
 			sourceTree = "<group>";
@@ -353,9 +368,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				509EC6741FCCA74500F12320 /* ViewController.m in Sources */,
+				50FE9E991FCF30EF008F860B /* Friend.m in Sources */,
 				509EC67F1FCCA74500F12320 /* main.m in Sources */,
+				50FE9E9F1FD35E26008F860B /* ContactsViewController.m in Sources */,
 				509EC6711FCCA74500F12320 /* AppDelegate.m in Sources */,
 				509EC6A61FCDF07400F12320 /* TableViewController.m in Sources */,
+				50FE9E9C1FCF32D2008F860B /* FriendsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

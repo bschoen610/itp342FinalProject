@@ -14,7 +14,6 @@
 @property(strong, nonatomic) NSMutableArray* friends;
 
 
-
 @end
 
 @implementation FriendsModel
@@ -42,11 +41,11 @@
         else
         {
             
-            friends = [[NSMutableArray alloc] init];
+            _friends = [[NSMutableArray alloc] init];
             
             for (NSDictionary* cardD in friends) {
                 Friend *friend = [[Friend alloc] init:cardD[kFirstName] lastName:cardD[kLastName] number:cardD[kNumber]];
-                [ friends addObject: friend];
+                [ _friends addObject: friend];
             }
             
         }

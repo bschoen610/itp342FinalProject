@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     //[super viewDidLoad];
+   // CLLocationManager locationManager = [[CLLocationManager alloc] init];
+   // [locationManager requestAlwaysAuthorization];
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.86
@@ -26,12 +28,17 @@
     mapView.myLocationEnabled = YES;
     self.view = mapView;
     
+    CLLocation* myLocation = [mapView myLocation];
+    
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(-33.86, 151.20);
+    //marker.position = CLLocationCoordinate2DMake(-33.86, 151.20);
+    marker.position = [myLocation coordinate];
     marker.title = @"Sydney";
     marker.snippet = @"Australia";
     marker.map = mapView;
+    [mapView animateToLocation:[myLocation coordinate]];
+
     // Do any additional setup after loading the view, typically from a nib.
     
     //Need to change starting location to be my current location

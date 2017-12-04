@@ -9,7 +9,6 @@
 #import "ContactsViewController.h"
 #import "Contacts/Contacts.h"
 #import "ContactsUI/ContactsUI.h"
-#import <ContactsUI/CNContactPickerViewController.h>
 
 
 @interface ContactsViewController ()
@@ -21,12 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    CNContactPickerViewController* picker = [[CNContactPickerViewController alloc] init];
+    [self selectContactData];
     
-    picker.delegate = self;
-    picker.displayedPropertyKeys = (NSArray *)CNContactGivenNameKey;
-    
-    [self presentViewController:picker animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +36,7 @@
     picker.delegate = self;
     picker.displayedPropertyKeys = (NSArray *)CNContactGivenNameKey;
     
-    [self presentViewController:picker animated:YES completion:nil];
+    [self presentViewController:picker animated:NO completion:nil];
     
 }
 
@@ -52,6 +47,13 @@
     NSLog(@"%@",test);
     
 }
+
+- (void)contactPickerDidCancel:(CNContactPickerViewController *)picker
+{
+    
+}
+
+
 
 /*
 #pragma mark - Navigation

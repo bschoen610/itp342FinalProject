@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "FriendsModel.h"
+#import "Contacts/Contacts.h"
+#import "ContactsUI/ContactsUI.h"
+#import <MessageUI/MessageUI.h>
 
 
-@interface TableViewController : UITableViewController
+
+@interface TableViewController : UITableViewController <CNContactPickerDelegate, MFMessageComposeViewControllerDelegate>
+
+- (void) selectContactData;
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

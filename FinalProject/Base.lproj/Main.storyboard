@@ -95,6 +95,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -105,10 +108,13 @@
                     <navigationItem key="navigationItem" id="d4Q-BE-Qr8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="s0l-YZ-ITJ">
                             <connections>
-                                <segue destination="kjp-dx-oHA" kind="presentation" id="skf-mN-jFt"/>
+                                <action selector="addButtonTapped:" destination="aqX-MO-YLs" id="539-40-CIL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton2" destination="s0l-YZ-ITJ" id="WO0-jS-I7o"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9G-Xb-4vs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
